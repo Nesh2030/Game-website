@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Game</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div id="app">
+        <h1>Simple Game</h1>
+        
+        <div id="login-container">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Enter Username">
+            <button id="login-btn">Login</button>
+        </div>
+
+        <div id="register-container">
+            <h2>Register</h2>
+            <input type="text" id="register-username" placeholder="Choose a Username">
+            <button id="register-btn">Register</button>
+        </div>
+
+        <div id="game-container" style="display: none;">
+            <h2>Welcome, <span id="welcome-username"></span>!</h2>
+            <canvas id="gameCanvas" width="800" height="600" style="border:1px solid #000;"></canvas>
+            <div id="controls">
+                <button id="up-btn">↑</button>
+                <button id="down-btn">↓</button>
+            </div>
+            <button id="play-btn">Play Game</button> 
+            <button id="logout-btn">Logout</button>
+            <h3 id="score-display">Score: 0</h3> <!-- Display score -->
+        </div>
+
+        <div id="scoreboard-container" style="display: none;">
+            <h2>Scoreboard</h2>
+            <ul id="scoreboard"></ul>
+        </div>
+
+        <!-- Audio element for background music -->
+        <audio id="background-music" src="background-music.mp3" loop></audio>
+    </div>
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
